@@ -1,0 +1,63 @@
+.tabs_container {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Меню вкладок */
+.tabs_menu {
+  display: flex;
+  background-color: #f3f3f6; /* Светлый общий фон плашки, как на скриншоте */
+  padding: 5px;
+  border-radius: 4px;
+  gap: 5px;
+}
+
+/* Обычная (неактивная) кнопка */
+.tab_button {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #8c90a6; /* Серый цвет шрифта для неактивных */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-weight: 400;
+}
+
+.tab_button:hover {
+  color: #555870;
+}
+
+/* Активная вкладка (как "О продукте" на картинке) */
+.tab_button.active {
+  background-color: #e2e1ec; /* Фиолетово-серый выделяющийся фон */
+  color: #4a4d6b; /* Более темный, контрастный цвет текста */
+  font-weight: 500;
+}
+
+/* Контент под табами */
+.tabs_content {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e2e1ec;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.tab_pane {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Плавное переключение контента */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
