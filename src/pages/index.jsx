@@ -100,7 +100,7 @@ const [openMenu, setOpenMenu] = useState(false)
       </Head>
       <div>
         <main>
-           <section>
+           <section className="white">
                <header>
             <div className="header_menu">
                 <ul className={`header_lst ${openMenu ? "active": ""}`}>
@@ -262,7 +262,7 @@ const [openMenu, setOpenMenu] = useState(false)
             </div>
            </section>
 
-           <section>
+           <section className="white">
             <div className="container">
               <div className="diamint_block">
                   <p className="txt_2">
@@ -290,7 +290,7 @@ const [openMenu, setOpenMenu] = useState(false)
             </div>
            </section>
 
-           <section>
+           <section className="white">
             <div className="container">
               <div className="product_block">
                 <p className="txt_4">Выбери свой продукт</p>
